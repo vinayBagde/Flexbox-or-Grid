@@ -28,7 +28,7 @@
 } */
 
 /* ------------------Flex Navigation vs Grid Navigation----------------- */
- .nav-list {
+ /* .nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -74,4 +74,41 @@ h2 {
 .grid .nav-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-} 
+}  */
+
+
+/* -----------------------Flex Vs Grid Cards----------------------- */
+h3, ul {
+  margin: 0;
+}
+
+.cards .card {
+  background: green;
+  padding: 1em;
+}
+
+.columns .tags {
+  padding: 0.25em;
+  background: lightgreen;
+  list-style: none;
+  
+}
+
+
+
+.columns {
+  /* display: flex;
+  gap: 1em; */
+}
+
+.columns > * {
+  /* flex: 1; */
+}
+
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
