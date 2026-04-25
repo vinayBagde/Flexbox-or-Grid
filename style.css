@@ -89,7 +89,6 @@ h3, ul {
 
 .columns .tags {
   padding: 0.25em;
-  background: lightgreen;
   list-style: none;
   
 }
@@ -111,4 +110,30 @@ h3, ul {
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 }
+
+
+/* using flexbox inside the grid container of cards*/
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1em;
+  font-size: 0.725rem;
+
+
+}
+
+.tag {
+  background: lightgreen;
+  padding: 0.25em;
+}
+
+
+
+/* Flex for lists
+Grid for tables
+
+If we want a FLEXIBLE layout (the layout adapts to fit the content), we use flex.
+If we want a more fixed layout (the content adapts to fit the layout), we use grid */
 
