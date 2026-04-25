@@ -1,0 +1,28 @@
+/* --------------Flex Container vs Grid Container------------------- */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > * {
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.flex-container div {
+  outline: 2px solid black;
+  padding: 0.5em;
+}
+
+.grid-container div {
+  outline: 2px solid black;
+  padding: 0.5em;
+}
